@@ -38,7 +38,7 @@ public class MessageStoreTestObject {
 
     public MessageStoreTestObject(final MessageStoreConfig messageStoreConfig) throws IOException {
         this.storeHost = new InetSocketAddress(InetAddress.getLocalHost(), 8123);
-        this.bornHost = new InetSocketAddress(InetAddress.getByName("10.232.102.184"), 0);
+        this.bornHost = new InetSocketAddress(InetAddress.getByName("127.0.0.1"), 0);
         this.messageStore = new DefaultMessageStore(messageStoreConfig);
         this.messageBody = this.buildMessageBody();
     }

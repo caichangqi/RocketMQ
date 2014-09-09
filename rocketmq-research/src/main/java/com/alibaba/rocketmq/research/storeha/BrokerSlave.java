@@ -22,7 +22,7 @@ public class BrokerSlave {
 
             final MessageStoreTestObject storeTestObject = new MessageStoreTestObject(messageStoreConfig);
 
-            storeTestObject.updateMasterAddress("10.235.170.21:10912");
+            storeTestObject.updateMasterAddress("127.0.0.1:10912");
 
             if (!storeTestObject.load()) {
                 System.out.println("load store failed");
